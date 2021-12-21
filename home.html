@@ -1,0 +1,152 @@
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="navbar">
+  <a class="active" href="{{ url_for('home') }}"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="{{ url_for('about') }}"><i class="fa fa-user-o"></i> About</a>
+  <a href="{{ url_for('announcements') }}"><i class="fa fa-fw fa-envelope"></i> Announcements</a>
+  <a href="{{ url_for('meetings')}}"><i class="fa fa-fw fa-user"></i> Meetings</a>
+</div>
+
+<style>
+  /* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: rgb(58, 6, 248);
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+
+
+
+
+
+<div class="home">
+    <h1>Computer Science Club</h1>
+    <p>This website was built for the computer science club
+      
+      
+    </p>
+
+</div>
+  
+
+<style>
+  .home {
+    padding: 50px;
+    text-align: center;
+    background-color: #939e3200;
+    color: rgb(58, 6, 248);
+  }
+  .home h1 {
+    color:red
+  }
+</style>
+
+
+
+
+<div class="bg-img">
+  <form action="/action_page.php" class="container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
+
+<style>
+  body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("https://salesianhigh.org/wp-content/uploads/2020/03/SHS-collage-2.png");
+
+  /* Control the height of the image */
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: rgb(58, 6, 248);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
