@@ -1,0 +1,92 @@
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="navbar">
+  <a class="active" href="{{ url_for('home') }}"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="{{ url_for('about') }}"><i class="fa fa-user-o"></i> About</a>
+  <a href="{{ url_for('announcements') }}"><i class="fa fa-fw fa-envelope"></i> Announcements</a>
+  <a href="{{ url_for('meetings')}}"><i class="fa fa-fw fa-user"></i> Meetings</a>
+</div>
+
+<style>
+  /* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: rgb(58, 6, 248);
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #001aff;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+
+
+
+
+<div class="meetings">
+    <h1>Computer Science Club Meetings</h1>
+    <p>Meetings are hosted on the following days;
+        <ul style="list-style-type:square">
+            <li>Tuesdays: After school</li>
+            <li>Thursdays: After School</li>
+            <li>Saturdays: 10 AM in the mornings.</li>
+
+        
+        
+        </ul>
+    </p>
+</div>
+
+
+<div class="upcomingmeets">
+  <h1>MEETINGS TODAY</h1>
+  <h3>{{ meet }}</h3>
+</div>
+
+
+<style>
+
+
+
+body {
+  background-color: lightslategray;
+}
+
+.meetings {
+    background-color: red;
+    padding: 50px;
+    text-align: left;
+    background-color: #474e5d;
+    color: white;
+}
+</style>
+
